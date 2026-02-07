@@ -42,8 +42,9 @@ x=lu_solve((lu,pivot),B)
 print(x)
 ```
 ## Output:
-![Code001](CODE_page-0001.jpg) 
-![Code002](CODE_page-0002.jpg)
+<img width="1465" height="865" alt="Screenshot 2026-02-07 084119" src="https://github.com/user-attachments/assets/f04e17b6-583b-4534-9d84-214f3295de15" />
+<img width="1724" height="741" alt="Screenshot 2026-02-07 084136" src="https://github.com/user-attachments/assets/e6cb7cb5-90fe-4f93-a095-dcf85f682385" />
+
 
 ## Result:
 Thus the program to find the LU Decomposition of a matrix is written and verified using python programming.
