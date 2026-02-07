@@ -17,34 +17,29 @@ To write a program to find the LU Decomposition of a matrix.
 ## Program:
 (i) To find the L and U matrix
 ```
-'''Program to find L and U matrix using LU decomposition.
-Developed by: KABELAN G K
-RegisterNumber: 24900985
-'''
-```
-```
+#Program to find L and U matrix using LU decomposition.
+#Developed by: KABBILESH.S
+#RegisterNumber: 212225240063
 import numpy as np
 from scipy.linalg import lu
-InputMatrix=np.array(eval(input()),dtype='i')
-piv,Lmatrix,Umatrix=lu(InputMatrix)
-print(Lmatrix)
-print(Umatrix)
+A=np.array(eval(input()))
+P,L,U=lu(A)
+print(L)
+print(U)
 ```
 (ii) To find the LU Decomposition of a matrix
-```
-'''Program to solve a matrix using LU decomposition.
-Developed by: KABELAN G K
-RegisterNumber: 24900985
 '''
-```
-```
+#Program to solve a matrix using LU decomposition.
+#Developed by: KABBILESH.S
+#RegisterNumber: 21225240063
+# To print X matrix (solution to the equations)
 import numpy as np
 from scipy.linalg import lu_factor,lu_solve
-AMatrix=np.array(eval(input()),dtype='i')
-BMatrix=np.array(eval(input()),dtype='i')
-XMatrix=lu_factor(AMatrix)
-Solution=lu_solve(XMatrix,BMatrix)
-print(Solution)
+A=np.array(eval(input()))
+B=np.array(eval(input()))
+lu,pivot=lu_factor(A)
+x=lu_solve((lu,pivot),B)
+print(x)
 ```
 ## Output:
 ![Code001](CODE_page-0001.jpg) 
